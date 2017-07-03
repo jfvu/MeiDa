@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+    <View
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:id="@+id/rl_chat_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="44px"
+        android:layout_below="@id/view_title"
+        android:background="#FFFFFF">
+        <TextView
+            android:id="@+id/tv_title_chat_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="25px"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="聊天"
+            android:textStyle="bold"
+            android:textSize="18px"
+            />
+        </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="聊天"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"/>-->
+    <!--<com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@id/tv_text"
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.example.jiaofeng.meida.refreshandupload.OrdinaryPDLView
+        android:id="@+id/refreshupload_chat_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_chat_fragment">
+        <com.example.jiaofeng.meida.refreshandupload.MyRecyclerView
+            android:id="@+id/recycler_chat_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.example.jiaofeng.meida.refreshandupload.MyRecyclerView>
+    </com.example.jiaofeng.meida.refreshandupload.OrdinaryPDLView>
+</RelativeLayout>

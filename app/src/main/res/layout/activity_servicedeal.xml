@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+    <LinearLayout
+        android:id="@+id/ll_servicedeal_title"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#ffffff"></LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/ll_servicedeal_title"
+        android:layout_width="match_parent"
+        android:layout_height="44px"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:id="@+id/ll_servicedeal"
+            android:layout_width="match_parent"
+            android:layout_height="44px"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"></LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_back_servicedeal"
+                android:layout_width="9px"
+                android:layout_height="16px"
+                android:background="@mipmap/back3x"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12px"
+
+                />
+
+        <TextView
+            android:id="@+id/tv_title_servicedeal"
+            android:layout_width="74px"
+            android:layout_height="25px"
+            android:layout_centerInParent="true"
+            android:text="服务协议"
+            android:textStyle="bold"
+            android:textSize="18px"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

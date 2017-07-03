@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+    <LinearLayout
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:id="@+id/rl_messagedetails_activity"
+        android:layout_width="match_parent"
+        android:layout_height="44px"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/view_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_title_messagedetails_activity"
+            android:layout_width="74px"
+            android:layout_height="25px"
+            android:layout_centerInParent="true"
+            android:text="内容标题"
+            android:textSize="18px"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/img_back_messagedetails_activity"
+            android:layout_width="9px"
+            android:layout_height="16px"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back3x"
+            android:layout_marginTop="12px"
+            android:layout_marginLeft="12px"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_messagedetails_activity"
+        android:background="#FFFFFF">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="320px"
+    android:text="内容内容内容"
+    android:textSize="14px"
+
+    android:layout_margin="12px"/>
+    </LinearLayout>
+</RelativeLayout>
